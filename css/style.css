@@ -1,24 +1,49 @@
 html{
   font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+  scroll-behavior: smooth;
 }
+/* Właśności bannera  */
 .banner{
   height: auto;
   width: 100%;
-  background-color: beige;
+  background-color: grey;
+  margin-top: 15px;
   display: flex;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
+  border-radius:20px;
+  position: fixed;
+  padding: 20px;
+  gap: 20px;
 }
 .banner_links{
   height: auto;
   width: 10%;
-  border: black solid;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
 
 }
-.banner_links:last-child{
-  margin-left: auto;
+.banner_links a{
+  text-decoration: none;
+  color: white;
+  transition: color 0.25s ease;
+}
+
+.banner_links a:hover{
+  color:black;
+}
+
+
+.main_panel{
+  background-color: darkgray;
+  width: auto;
+  height: 100vh;
+
+}
+.aboutMe{
+  width: auto;
+  height: 1000px;
 }
 body{
   margin: 0;
