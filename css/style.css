@@ -1,0 +1,27 @@
+html{
+  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+}
+.banner{
+  height: auto;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  text-align: left;
+}
+.banner_links{
+  height: auto;
+  width: 10%;
+  border: black solid;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.banner_links:last-child{
+  margin-left: auto;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
