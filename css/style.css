@@ -2,19 +2,20 @@ html{
   font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
   scroll-behavior: smooth;
 }
-/* Właśności bannera  */
+
+/* Banner properties */
 .banner{
   height: auto;
   width: 100%;
-  background-color: grey;
-  margin-top: 15px;
+  background-color: rgb(0,0,0,0);
   display: flex;
   justify-content: center;
+  position: absolute;
   text-align: center;
-  border-radius:20px;
-  position: fixed;
-  padding: 20px;
   gap: 20px;
+  padding: 20px;
+  z-index: 999;
+
 }
 .banner_links{
   height: auto;
@@ -34,13 +35,28 @@ html{
   color:black;
 }
 
-
+/* Main panel properties */
 .main_panel{
-  background-color: darkgray;
+  background-color: URL("img/main.png");
+  background-size:cover ;
   width: auto;
   height: 100vh;
-
+  user-select: none;
 }
+.main_panel img{
+  filter:brightness(60%);
+}
+.main_section{
+  color: #F0EAD6;
+  width: 40vw;
+  height: 100px;
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-45%, -55%);
+}
+
+/* About me section */
 .aboutMe{
   width: auto;
   height: 1000px;
